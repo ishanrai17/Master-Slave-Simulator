@@ -46,7 +46,10 @@ def rec():
         s.close()
 def run(b):                  
             time.sleep(b[1])
-            send(b[0])
+            try:
+                send(b[0])
+            except:
+                pass
 
                 
                 
